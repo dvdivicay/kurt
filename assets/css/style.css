@@ -1,14 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -21,11 +10,13 @@
    */
 
   /* backgorund color */
-  --bg-white: hsla(0, 0%, 100%, 1);
+  --bg-white: rgb(255, 255, 255);
+  --bg-beige: rgb(236, 211, 170);
   --bg-gainsboro: hsla(154, 10%, 86%, 1);
-  --bg-wild-blue-yonder: hsla(227, 39%, 75%, 1);
+  --bg-brown: rgb(121, 105, 88);
   --bg-orange-crayola: hsla(18, 97%, 62%, 1);
-  --bg-roman-silver-alpha-30: hsla(210, 9%, 57%, 0.3);
+  --bg-roman-silver-alpha-30: hsla(36, 81%, 87%, 0.9);
+  --bg-grey: rgb(116, 116, 116);
 
   /* text color */
   --text-orange-crayola: hsla(18, 97%, 62%, 1);
@@ -33,7 +24,7 @@
   --text-eerie-black: hsla(210, 11%, 15%, 1);
   --text-eerie-black-2: hsla(0, 0%, 7%, 1);
   --text-black: hsla(270, 100%, 0%, 1);
-
+  --text-white: rgb(255, 255, 255);
   /* border color */
   --border-eerie-black: hsla(0, 0%, 7%, 1);
 
@@ -174,7 +165,7 @@ body {
 .h4 { font-size: var(--fontSize-6); }
 
 .btn {
-  background-color: var(--bg-white);
+  background-color: var(--bg-beige);
   display: flex;
   align-items: center;
   max-width: max-content;
@@ -201,7 +192,7 @@ body {
 
 .btn-primary:is(:hover, :focus-visible) { color: var(--text-orange-crayola); }
 
-.btn-secondary { background-color: var(--bg-orange-crayola); }
+.btn-secondary { background-color: var(--bg-grey); }
 
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
@@ -290,7 +281,7 @@ body {
 }
 
 .header.active {
-  background-color: var(--bg-white);
+  background-color: var(--bg-roman-silver-alpha-30);
   box-shadow: var(--shadow-1);
 }
 
@@ -312,6 +303,7 @@ body {
   overflow: hidden;
   visibility: hidden;
   transition: var(--transition-2);
+  color: var(--text-orange-crayola);
 }
 
 .navbar.active {
@@ -345,7 +337,7 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-color: var(--bg-wild-blue-yonder);
+  background-color: var(--bg-brown);
   padding-block: 130px 75px;
 }
 
@@ -422,7 +414,7 @@ body {
 
 .footer {
   position: relative;
-  background-color: var(--bg-gainsboro);
+  background-color: var(--bg-brown);
   padding-block-start: 160px;
 }
 
@@ -443,7 +435,7 @@ body {
 }
 
 .social-link {
-  background-color: var(--bg-white);
+  background-color: var(--bg-beige);
   width: 52px;
   height: 52px;
   display: grid;
